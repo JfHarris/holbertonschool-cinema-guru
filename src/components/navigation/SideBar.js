@@ -61,11 +61,10 @@ export default function SideBar({userUsername}) {
               }}
                 className={selected === "favorites" ? "selected" : ""}>
                 Favorites
-                {/* if selected is favorites, show the arrow */}
                 {selected === "favorites" ?
                   <Link to="/favorites">
                     <FontAwesomeIcon icon="arrow-right" className="arrow-right" />
-                  </Link> : ''}
+                  </Link> : ""}
               </MenuItem>
               <MenuItem icon={<FiClock />} onClick={() => {
                 setPage("/watchlater")
@@ -80,7 +79,7 @@ export default function SideBar({userUsername}) {
               </MenuItem>
             </div>
           </Menu>
-          {menuCollapse ? '' : 
+          {menuCollapse ? "" : 
             <div className="latestActivities">
               {!menuCollapse &&
                 <ul>
