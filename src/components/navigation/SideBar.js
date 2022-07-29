@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ProSidebar, Menu, MenuItem, SidebarContent } from 'react-pro-sidebar';
+import { ProSidebar, Menu, MenuItem, SidebarContent } from "react-pro-sidebar";
 import { FiStar, FiFolder, FiClock } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Activity from "../Activity";
-import 'react-pro-sidebar/dist/css/styles.css';
-import './sidebar.css';
+import "react-pro-sidebar/dist/css/styles.css";
+import "./sidebar.css";
 
 export default function SideBar({userUsername}) {
   const [selected, setSelected] = useState("");
